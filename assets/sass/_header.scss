@@ -1,0 +1,646 @@
+.burger_btn {
+    font-size: 10px;
+    width: 4em;
+    height: 2.7em;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    top: 1.5em;
+    span {
+        background: $color-blue;
+        height: .3em;
+        width: 100%;
+        display: block;
+        &::after, &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background: $color-blue;
+            height: .3em;
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            top: 1.2em;
+        }
+        &::before {
+            content: "";
+            bottom: 0;
+        }
+    }
+}
+.sidenav-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+.desktop-menu {
+    max-width: 1380px;
+    margin: auto;
+    padding: 3em 4em 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 10px;
+    & > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .logo {
+        width: 17%;
+        margin-bottom: 2em;
+        text-decoration: none;
+        img {}
+    }
+    nav {
+        width: 41%;
+        font-family: $font-sec;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        ul {
+            text-align: center;
+            margin-bottom: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                a {}
+                &:nth-child(2) {
+                    margin: 0px 8%;
+                }
+            }
+        }
+    }
+    .phone-chat {
+        color: #fff;
+        font-family: $font-sec;
+        font-size: 3.5em;
+        line-height: 1;
+        margin-bottom: .65em;
+        p {
+            font-family: $font-stack;
+            font-weight: 600;
+            font-size: .46em;
+            display: block;
+            img {
+                vertical-align: top;
+                margin-right: .3em;
+            }
+        }
+        a {
+            color: #fff;
+        }
+        > img {
+            margin-left: .55em;
+            cursor: pointer;
+        }
+    }
+    .login-btns {
+        float: right;
+        margin-top: 1.6%;
+        width: 18%;
+        text-align: right;
+        a.button {
+            margin-right: 2%;
+            width: 46%;
+            min-width: inherit;
+            margin-bottom: .3em;
+            font-size: 2.5em;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &.logged-in {
+        width: 100%;
+        max-width: inherit;
+        padding: 0;
+        background: rgba(3, 7, 15, .8);
+        position: fixed;
+        left: 0;
+        top: 0;
+        .h-cont {
+            max-width: 1380px;
+            margin: auto;
+            padding: 1.4em 4em .8em;
+            display: block;
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .logo {
+                width: 12%;
+                margin-bottom: 1em;
+            }
+            nav {
+                width: 35%;
+            }
+            .phone-chat {
+                float: right;
+                font-size: 2.5em;
+                margin-bottom: 0;
+                margin-top: .2em;
+                p {
+                    font-size: .46em;
+                    img {
+                        max-width: 1em;
+                    }
+                }
+            }
+            .account-info {
+                font-family: $font-sec;
+                color: #fff;
+                font-size: 2.5em;
+                line-height: 1;
+                padding: .3em .8em;
+                margin-top: -.2em;
+                margin-left: -.5em;
+                @include beveled-corners(#2b466f, .14em, .14em);
+                position: relative;
+                .ai-l {
+                    float: left;
+                    p {
+                        font-family: $font-stack;
+                        font-weight: 600;
+                        font-size: .46em;
+                        display: block;
+                    }
+                    a {
+                        text-transform: uppercase;
+                    }
+                }
+                .ai-r {
+                    float: right;
+                    position: relative;
+                    top: .2em;
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 961px) {
+    .mobile-menu {
+        display: none;
+    }
+    .sidenav-overlay {
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+@media (max-width: 1399px) {
+    .desktop-menu {
+        font-size: 9px;
+        nav {
+            width: 39%;
+        }
+        &.logged-in {
+            .h-cont {
+                .account-info {
+                    .ai-r {
+                        a.button {
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login-btns {
+        a.button {
+            &.red {
+                background-size: 53% 53%;
+            }
+            &.blue {
+                background-size: 53% 53%;
+            }
+        }
+    }
+}
+@media (max-width: 1260px) {
+    .desktop-menu {
+        font-size: 8px;
+        nav {
+            width: 37%;
+        }
+        &.logged-in {
+            .h-cont {
+                .account-info {
+                    margin-left: .5em;
+                    .ai-r {
+                        a.button {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login-btns {
+        a.button {
+            
+        }
+    }
+}
+@media (max-width: 960px) {
+    .sidenav-overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        font-size: 10px;
+        padding: 1.4em 3em;
+        position: relative;
+        z-index: 2;
+        background-color: #081329;
+        .top {
+            position: relative;
+            .logo {
+                float: left;
+                position: relative;
+                display: block;
+                z-index: 1;
+            }
+            .middle-cont {
+                position: absolute;
+                left: 15%;
+                right: 0;
+                margin: auto;
+                text-align: center;
+                top: 1.4em;
+                .login-btns {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 260px;
+                    a.button {
+                        margin-right: 10%;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                img {
+                    display: inline-block;
+                    vertical-align: top;
+                    cursor: pointer;
+                    margin-left: 3%;
+                }
+            }
+        }
+        .bottom {
+            position: absolute;
+            bottom: -1.5em;
+            text-align: center;
+            left: 0;
+            right: 0;
+            font-size: 2.7em;
+            font-family: "bombardier";
+            line-height: 1;
+            a {
+                color: #fff;
+            }
+            img {
+                vertical-align: middle;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                position: absolute;
+                left: 10%;
+                right: 0;
+                margin: auto;
+                text-align: center;
+                top: .2em;
+                max-width: 27em;
+                .account-info {
+                    font-family: $font-sec;
+                    color: #fff;
+                    font-size: 2.5em;
+                    line-height: 1;
+                    padding: .3em .5em;
+                    @include beveled-corners(#2b466f, .14em, .14em);
+                    position: relative;
+                    .ai-l {
+                        float: left;
+                        margin-right: .8em;
+                        text-align: left;
+                        p {
+                            font-family: $font-stack;
+                            font-weight: 600;
+                            font-size: .46em;
+                            display: block;
+                        }
+                        a {
+                            text-transform: uppercase;
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+                    .ai-r {
+                        text-align: right;
+                        position: relative;
+                        top: .1em;
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 64em;
+        height: 100%;
+        background: #03070f;
+        z-index: 10;
+        text-align: center;
+        transition: .3s;
+        font-size: 7px;
+        padding: 3em;
+        overflow: auto;
+        > img {}
+        .close_nav {
+            display: block;
+            font-size: 3.6em;
+            color: #fff;
+            line-height: 1;
+            position: absolute;
+            right: .85em;
+            top: .85em;
+            cursor: pointer;
+        }
+        .login-btns {
+            margin-top: 3em;
+            a.button {
+                margin-left: 4%;
+                font-size: 5em;
+                min-width: inherit;
+                padding: 0 .5em;
+                &.red {
+                    @include beveled-corners($color-red, .1em, .1em);
+                    background-size: 53% 53%;
+                }
+                &.blue {
+                    @include beveled-corners($color-blue, .1em, .1em);
+                    background-size: 53% 53%;
+                }
+                &:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .mob-menu {
+            list-style: none;
+            margin: 4em 0 0;
+            > li {
+                font-size: 5em;
+                text-transform: uppercase;
+                font-family: $font-sec;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                }
+                &.with-submenu {
+                    > div {
+                        color: $color-blue;
+                        transition: .2s;
+                        cursor: pointer;
+                        > span {
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .burger_btn {
+                            font-size: .2em;
+                            float: none;
+                            display: inline-block;
+                            vertical-align: middle;
+                            top: inherit;
+                            margin-left: .5em;
+                            span {
+                                transition: .2s;
+                                &:before, &:after {
+                                    transition: .2s;
+                                }
+                            }
+                        }
+                        &:hover {
+                            color: #fff;
+                            .burger_btn {
+                                span {
+                                    background: #fff;
+                                    &:before, &:after {
+                                        background: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .submenu {
+                        list-style: none;
+                        font-family: $font-stack;
+                        max-width: 95%;
+                        margin: .2em auto 0;
+                        @include beveled-corners($color-dark-blue, .1em, .1em);
+                        padding: .4em .2em;
+                        display: none;
+                        li {
+                            font-size: .7em;
+                            letter-spacing: .1em;
+                            a {
+                                width: 100%;
+                                padding: .3em;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .active-mob-menu {
+        overflow: hidden;
+        .sidenav-overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+        nav {
+            left: 0;
+        }
+    }
+    
+}
+@media (max-width: 768px) {
+    .mobile-menu {
+        .top {
+            .logo {
+                width: 18.5em;
+            }
+            .middle-cont {
+                left: 23%;
+                top: 1em;
+                .login-btns {
+                    width: 25em;
+                    a.button {
+                        margin-right: 1%;
+                        font-size: 3.2em;
+                        min-width: 3.8em;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                img {
+                    margin-left: 2%;
+                    content: url("../images/chat-icon-mob.png");
+                    width: 5.2em;
+                }
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                top: 0;
+            }
+        }
+    }
+}
+@media (max-width: 640px) {
+    .mobile-menu {
+        font-size: 9px;
+        .top {
+            .burger_btn {
+                font-size: 9px;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                left: 27%;
+                max-width: 53%;
+                .account-info {
+                    .ai-r {
+                        a.button {
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .mobile-menu {
+        font-size: 8px;
+        .top {
+            .burger_btn {
+                font-size: 8px;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                .account-info {
+                    .ai-r {
+                        a.button {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 9x;
+    }
+}
+@media (max-width: 520px) {
+    .mobile-menu {
+        font-size: 7px;
+        .top {
+            .burger_btn {
+                font-size: 7px;
+            }
+        }
+        .bottom {
+            img {
+                vertical-align: bottom;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                .account-info {
+                    .ai-r {
+                        a.button {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 8px;
+    }
+}
+@media (max-width: 480px) {
+    .mobile-menu {
+        font-size: 6px;
+        .top {
+            .burger_btn {
+                font-size: 6px;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                .account-info {
+                    padding: .35em .5em;
+                    .ai-r {
+                        a.button {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 7px;
+        .logo {
+            content: url(../images/wb_logo.png);
+        }
+    }
+}
+@media (max-width: 400px) {
+    .mobile-menu {
+        font-size: 5px;
+        .top {
+            .burger_btn {
+                font-size: 5px;
+            }
+        }
+        &.logged-in {
+            .middle-cont {
+                .account-info {
+                    .ai-r {
+                        a.button {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav {
+        font-size: 5px;
+    }
+}
