@@ -1,3 +1,24 @@
-h6{
-	color: red;
+section{
+	&.error-page{
+		height:100vh;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		font-family: $font-sec;
+		h2{
+			font-size: 55px;
+			padding-bottom: .5em;
+			text-transform: uppercase;
+		}
+		img{
+			width: 100%;
+			max-width: 350px;
+		}
+		.back-link{
+			font-size: 1.4em;
+			font-weight: 400;
+			font-family: $font-stack;
+		}
+	}
+	
 }
