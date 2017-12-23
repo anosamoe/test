@@ -104,6 +104,7 @@
     }
     input {
         font-size: 2em;
+        width: 100%;
         &::-webkit-input-placeholder {
             color: rgba(0,0,0,.5);
             transition: .2s;
@@ -123,13 +124,70 @@
     }
     select {
         font-size: 2em;
+        width: 100%;
+    }
+    input, select {
+        @include clip-path(5px, calc(100% - 5px));
+        border: 1px solid #c2c2c2;
+        outline: none;
     }
     .form-group {
         margin: 0;
         width: 100%;
         max-width: 355px;
+        position: relative;
         &::after {
             
+        }
+    }
+    .corners {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        span {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            &:before, &:after {
+                width: 7px;
+                height: 1px;
+                background: #c2c2c2;
+                position: absolute;
+            }
+            &:first-child {
+                &:after {
+                    content: "";
+                    bottom: 2.5px;
+                    left: -1px;
+                    transform: rotate(45deg);
+                }
+                &::before {
+                    content: "";
+                    top: 2.5px;
+                    left: -1px;
+                    transform: rotate(-45deg);
+                }
+            }
+            &:last-child {
+                &:after {
+                    content: "";
+                    bottom: 2.5px;
+                    right: -1px;
+                    transform: rotate(-45deg);
+                }
+                &::before {
+                    content: "";
+                    top: 2.5px;
+                    right: -1px;
+                    transform: rotate(45deg);
+                }
+            }
         }
     }
 }

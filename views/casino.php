@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Casino</title>
-    <?php include('./head.php'); ?>
+    <?php include('./head_foot_menu/head.php'); ?>
 </head>
 
 <body>
-    <?php include('./header-logged-in.php'); ?>
+    <?php include('./head_foot_menu/header-logged-in.php'); ?>
     <div class="main-container home-logged-in">
         <section class="home-li-slider">
             <div class="hls-slider">
@@ -285,7 +285,7 @@
                 </div>
             </div>
         </section>
-        <?php include('./footer.php'); ?>
+        <?php include('./head_foot_menu/footer.php'); ?>
     </div>
 
 </body>

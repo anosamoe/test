@@ -16,18 +16,21 @@
                                     <label for="firstname-popup">First Name</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="text" id="firstname-popup" name="first_name" placeholder="First Name">
+                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="lastname-popup">Last Name</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="text" id="lastname-popup" name="last_name" placeholder="Last Name">
+                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="sign-up-popup">Your Email</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="email" id="sign-up-popup" name='email' placeholder="Your Email">
+                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
@@ -47,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class='input-cont'>
-                                    <div class='date-select'>
+                                    <div class='input-cont-group form-group date-select'>
                                        <div class='date-item'>
                                             <?php 
                                                 $months = array(1 => 'January', 2 => 'February.', 3 => 'March', 4 => 'April', 5 => 'May', 6 => 'June', 7 => 'July', 8 => 'August', 9 => 'September', 10 => 'October', 11 => 'November', 12 => 'December');
@@ -90,23 +93,27 @@
                                 <div class="col_title">Contact Information</div>
                                 <div class='input-cont'>
                                     <label for="">Country</label>
-                                    <select name="country">
-                                        <option value="1" selected disabled>Select country</option>
-                                        <option value="2">country 1</option>
-                                        <option value="3">country 2</option>
-                                        <option value="4">country 3</option>
-                                        <option value="5">country 4</option>
-                                    </select>
+                                    <div class='input-cont-group form-group'>
+                                        <select name="country">
+                                            <option value="1" selected disabled>Select country</option>
+                                            <option value="2">country 1</option>
+                                            <option value="3">country 2</option>
+                                            <option value="4">country 3</option>
+                                            <option value="5">country 4</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="">State</label>
-                                    <select name="state">
-                                        <option value="1" selected disabled>Select state</option>
-                                        <option value="2">state 1</option>
-                                        <option value="3">state 2</option>
-                                        <option value="4">state 3</option>
-                                        <option value="5">state 4</option>
-                                    </select>
+                                    <div class='input-cont-group form-group'>
+                                        <select name="state">
+                                            <option value="1" selected disabled>Select state</option>
+                                            <option value="2">state 1</option>
+                                            <option value="3">state 2</option>
+                                            <option value="4">state 3</option>
+                                            <option value="5">state 4</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="city-popup">City</label>
@@ -141,13 +148,15 @@
                                 </div>
                                 <div class='input-cont'>
                                     <label for="">How did you hear about us</label>
-                                    <select name="">
-                                        <option value="1" selected disabled>Select (optional)</option>
-                                        <option value="2">option 1</option>
-                                        <option value="3">option 2</option>
-                                        <option value="4">option 3</option>
-                                        <option value="5">option 4</option>
-                                    </select>
+                                    <div class='input-cont-group form-group'>
+                                        <select name="">
+                                            <option value="1" selected disabled>Select (optional)</option>
+                                            <option value="2">option 1</option>
+                                            <option value="3">option 2</option>
+                                            <option value="4">option 3</option>
+                                            <option value="5">option 4</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="specify-popup">Please specify</label>

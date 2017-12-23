@@ -1,0 +1,49 @@
+section {
+	&.error-page {
+		height:100vh;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		font-family: $font-sec;
+        background-image: url(../images/error_bg.jpg);
+        background-size: cover;
+        background-position: top center;
+        padding: 15% 5%;
+		p {
+			font-size: 3.5em;
+			padding: .3em 0 .5em;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		img {
+			width: 100%;
+			max-width: 350px;
+		}
+		.back-link {
+			font-size: 1.4em;
+			font-weight: 400;
+			font-family: $font-stack;
+		}
+	}
+}
+@media (max-width: 768px) {
+    section {
+        &.error-page {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 640px) {
+    section {
+        &.error-page {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    section {
+        &.error-page {
+            font-size: 10px;
+        }
+    }
+}

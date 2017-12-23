@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Home Logged Out</title>
-    <?php include('./head.php'); ?>
+    <?php include('./head_foot_menu/head.php'); ?>
 </head>
 
 <body>
-    <?php include('./header-logged-out.php'); ?>
+    <?php include('./head_foot_menu/header-logged-out.php'); ?>
     <section class="home-banner">
         <div class="banner-container">
             <div class="banner-slider img-right" style="background-image: url(../assets/images/banner-1-bg.png)">
@@ -69,7 +69,7 @@
                 </div>
             </div>
         </section>
-        <?php include('./footer.php'); ?>
+        <?php include('./head_foot_menu/footer.php'); ?>
     </div>
 </body>
 </html>
