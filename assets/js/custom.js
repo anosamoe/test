@@ -33,6 +33,21 @@ jQuery(document).ready(function () {
         });
     }
 }
+// ;function gamesCaruosel() {
+//     if ($('.promotions_carousel').length > 0) {
+//         $('.promotions_carousel').slick({
+//             slidesToShow: 3,
+//             slidesToScroll: 3,
+//             dots: true,
+//             arrows: true,
+//             focusOnSelect: false,
+//             focusOnChange: false,
+//             accessibility: false,
+//             infinite: false,
+//             variableWidth: true,
+//         });
+//     }
+// }
 ;function homeBannerLoggedIn() {
     if ($('.banner-container').length > 0) {
         $('.banner-container').slick({
