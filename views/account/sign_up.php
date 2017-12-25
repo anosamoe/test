@@ -16,42 +16,35 @@
                                     <label for="firstname-popup">First Name</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="text" id="firstname-popup" name="first_name" placeholder="First Name">
-                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="lastname-popup">Last Name</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="text" id="lastname-popup" name="last_name" placeholder="Last Name">
-                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="sign-up-popup">Your Email</label>
                                     <div class='input-cont-group form-group'>
                                         <input type="email" id="sign-up-popup" name='email' placeholder="Your Email">
-                                        <div class="corners"><span></span><span></span></div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
                                     <label for="">Mobile Phone</label>
-                                    <div class='clear phone_cont'>
-                                        <div class='input-cont-group form-group left_c'>
-                                            <select name="">
-                                                <option value="1">USA +1</option>
-                                                <option value="2">USA +156</option>
-                                                <option value="3">USA +445</option>
-                                                <option value="4">USA +642</option>
-                                            </select>
+                                    <div class='clear phone_cont form-group'>
+                                        <div class='input-cont-group left_c'>
+                                            <input type="number" name='mob_code' placeholder="USA +1" disabled>
                                         </div>
-                                        <div class='input-cont-group form-group right_c'>
+                                        <div class='input-cont-group right_c'>
                                             <input type="number" id="mobile-number-popup" name='mob_number' placeholder="234 567-89-01">
                                         </div>
                                     </div>
                                 </div>
                                 <div class='input-cont'>
-                                    <div class='input-cont-group form-group date-select'>
-                                       <div class='date-item'>
+                                    <label for="">Date of Birth</label>
+                                    <div class='input-cont-group date-select'>
+                                       <div class='form-group select-arrow'>
                                             <?php 
                                                 $months = array(1 => 'January', 2 => 'February.', 3 => 'March', 4 => 'April', 5 => 'May', 6 => 'June', 7 => 'July', 8 => 'August', 9 => 'September', 10 => 'October', 11 => 'November', 12 => 'December');
                                                 $transposed = array_slice($months, date('n'), 12, true) + array_slice($months, 0, date('n'), true);
@@ -66,7 +59,7 @@
                                                 ?>
                                             </select>
                                         </div>
-                                        <div class='date-item'>
+                                        <div class='form-group select-arrow'>
                                             <select name='dob'>
                                                 <option selected="true" disabled="disabled">Day</option>
                                                 <?php 
@@ -76,7 +69,7 @@
                                                 ?>
                                             </select>
                                         </div>
-                                        <div class='date-item'>
+                                        <div class='form-group select-arrow'>
                                             <select name='dob'>
                                                 <option selected="true" disabled="disabled">Year</option>
                                                 <?php 
@@ -93,7 +86,7 @@
                                 <div class="col_title">Contact Information</div>
                                 <div class='input-cont'>
                                     <label for="">Country</label>
-                                    <div class='input-cont-group form-group'>
+                                    <div class='input-cont-group form-group select-arrow'>
                                         <select name="country">
                                             <option value="1" selected disabled>Select country</option>
                                             <option value="2">country 1</option>
@@ -105,7 +98,7 @@
                                 </div>
                                 <div class='input-cont'>
                                     <label for="">State</label>
-                                    <div class='input-cont-group form-group'>
+                                    <div class='input-cont-group form-group select-arrow'>
                                         <select name="state">
                                             <option value="1" selected disabled>Select state</option>
                                             <option value="2">state 1</option>
@@ -148,7 +141,7 @@
                                 </div>
                                 <div class='input-cont'>
                                     <label for="">How did you hear about us</label>
-                                    <div class='input-cont-group form-group'>
+                                    <div class='input-cont-group form-group select-arrow'>
                                         <select name="">
                                             <option value="1" selected disabled>Select (optional)</option>
                                             <option value="2">option 1</option>
@@ -166,14 +159,37 @@
                                 </div>
                                 <div class='input-cont'>
                                     <label for="promo-popup">Promo Code</label>
-                                    <div class='input-cont-group form-group'>
-                                        <input type="text" id="promo-popup" name="specify" placeholder="Promo Code">
-                                        <p>Use it to get bonus</p>
+                                    <div class='clear promo_cont'>
+                                        <div class='input-cont-group form-group left_c'>
+                                            <input type="text" id="promo-popup" name="specify" placeholder="Promo Code">
+                                        </div>
+                                        <div class='input-cont-group right_c'>
+                                            Use it to get bonus
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bottom"></div>
+                        <div class="bottom">
+                            <div class="col3-item">
+                                <p class="checkbox">
+                                    <input type="checkbox" id="offers" />
+                                    <label for="offers"><span>Receive promotional offers & newsletters</span></label>
+                                </p>
+                                <p class="checkbox">
+                                    <input type="checkbox" id="sms" />
+                                    <label for="sms"><span>Send me exclusive offers & account notifications by SMS</span></label>
+                                </p>
+                                <p class="checkbox">
+                                    <input type="checkbox" id="age_agree" checked/>
+                                    <label for="age_agree"><span>I am over the age of 18 and agree to <a href="#">Terms & Conditions</a></span></label>
+                                </p>
+                            </div>
+                            <div class="col3-item"></div>
+                            <div class="col3-item">
+                                <a href="#" class="button red medium-btn">Sign up</a>
+                            </div>
+                        </div>
                     </div>
 				</form>
 			</div>

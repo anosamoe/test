@@ -1,22 +1,15 @@
-$font-stack: 'blogger_sans', Arial, sans-serif;
+$font-stack: 'blogger_sans',
+Arial,
+sans-serif;
 $font-sec: 'bombardier';
 $font-banner-title: 'atlantic_bentley';
 $color-blue: #03eaff;
 $color-dark-blue: #142e54;
 $color-red: #ff535f;
 $color-green: #5fba2a;
-@mixin beveled-corners($bg,
-$tl:0, $tr:$tl, $br:$tl, $bl:$tr) {
+@mixin beveled-corners($bg, $tl:0, $tr:$tl, $br:$tl, $bl:$tr) {
     background: $bg;
-    background:
-    linear-gradient(135deg, transparent $tl, $bg 0)
-    top left,
-    linear-gradient(225deg, transparent $tr, $bg 0)
-    top right,
-    linear-gradient(-45deg, transparent $br, $bg 0)
-    bottom right,
-    linear-gradient(45deg, transparent $bl, $bg 0)
-    bottom left;
+    background: linear-gradient(135deg, transparent $tl, $bg 0) top left, linear-gradient(225deg, transparent $tr, $bg 0) top right, linear-gradient(-45deg, transparent $br, $bg 0) bottom right, linear-gradient(45deg, transparent $bl, $bg 0) bottom left;
     background-size: 52% 52%;
     background-repeat: no-repeat;
 }
@@ -24,8 +17,6 @@ $tl:0, $tr:$tl, $br:$tl, $bl:$tr) {
     -webkit-clip-path: polygon($path 0%, $calc 0%, 100% $path, 100% $calc, $calc 100%, $path 100%, 0% $calc, 0% $path);
     clip-path: polygon($path 0%, $calc 0%, 100% $path, 100% $calc, $calc 100%, $path 100%, 0% $calc, 0% $path);
 }
-
-
 *,
 *::after,
 *::before {
@@ -223,13 +214,13 @@ img {
         &.slick-prev {
             left: -6em;
             &::after {
-                content: "<";  
+                content: "<";
             }
         }
         &.slick-next {
             right: -6em;
             &::after {
-                content: ">";  
+                content: ">";
             }
         }
     }
@@ -279,9 +270,6 @@ img {
         }
     }
 }
-
-
-
 input:focus::-webkit-input-placeholder {
     color: transparent !important;
 }
@@ -294,6 +282,92 @@ input:focus:-ms-input-placeholder {
 input:focus:-moz-placeholder {
     color: transparent !important;
 }
+
+/* checkbox */
+.checkbox, .checkbox+.checkbox {
+    font-size: 10px;
+    margin: 0em 0 1em;
+    span {
+        font-size: 1.2em;
+        font-weight: 600;
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 1;
+        height: 2.3em;
+    }
+    a {
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 4em;
+    cursor: pointer;
+}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.8em;
+    height: 2.8em;
+    border: none;
+    @include beveled-corners(#c2c2c2, .3em, .3em);
+    background-size: 55% 55%;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: "\f00c";
+    position: absolute;
+    top: .13335em;
+    left: .13335em;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-align: center;
+    color: #5fba2a;
+    transition: all .2s;
+    font-family: FontAwesome;
+    @include beveled-corners(#fff, .15em, .15em);
+    background-size: 55% 55%;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    color: transparent;
+}
+[type="checkbox"]:checked + label:after {
+    color: #5fba2a;
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+}
+[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+[type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {}
+/* hover style just for information */
+label:hover:before {}
+/* end checkbox */
+
 @media (min-width: 641px) {
     .hide-on-desktop {
         display: none !important;
@@ -304,8 +378,6 @@ input:focus:-moz-placeholder {
         display: none !important;
     }
 }
-
-
 @import 'header.scss';
 @import 'footer.scss';
 @import 'home-logged-out.scss';

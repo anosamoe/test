@@ -16,7 +16,7 @@
     </div>
     <div class="login-btns">
         <a href="#" class="button small-btn red" data-toggle="modal" data-target="#sign-up-modal"><span>Sign up</span></a>
-        <a href="#" class="button small-btn blue"><span>Log in</span></a>
+        <a href="#" class="button small-btn blue" data-toggle="modal" data-target="#login-modal"><span>Log in</span></a>
     </div>
 </header>
 <header class="mobile-menu">
@@ -27,7 +27,7 @@
         <div class="middle-cont">
             <div class="login-btns">
                 <a href="#" class="button small-btn red" data-toggle="modal" data-target="#sign-up-modal"><span>Sign up</span></a>
-                <a href="#" class="button small-btn blue"><span>Log in</span></a>
+                <a href="#" class="button small-btn blue" data-toggle="modal" data-target="#login-modal"><span>Log in</span></a>
             </div>
             <img src="../assets/images/chat-icon.png" alt="">
         </div>

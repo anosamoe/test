@@ -179,8 +179,9 @@
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 padding: .3em;
-                                background-origin: content-box;
+                                background-clip: content-box;
                                 position: relative;
+                                @include clip-path(1.5em, calc(100% - 1.5em));
                                 z-index: 2;
                             }
                             .game_overlay {

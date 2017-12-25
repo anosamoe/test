@@ -5,6 +5,7 @@ jQuery(document).ready(function () {
     toggleMobMenu();
     homeBannerLoggedIn();
     gamesCaruosel();
+    multyModals();
 });
 
 ;function homeBanner() {
@@ -22,13 +23,13 @@ jQuery(document).ready(function () {
 ;function gamesCaruosel() {
     if ($('.gc_carousel').length > 0) {
         $('.gc_carousel').slick({
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             dots: true,
             arrows: true,
             focusOnSelect: false,
             focusOnChange: false,
             accessibility: false,
-            infinite: false,
+            infinite: true,
             variableWidth: true,
         });
     }
@@ -73,4 +74,15 @@ jQuery(document).ready(function () {
     $('.close_nav, .sidenav-overlay').click(function(){
         $('body').removeClass('active-mob-menu');
     });
+}
+
+;function multyModals() {
+	$(document).on('hidden.bs.modal', function () {
+		if($('.modal.fade:visible').length > 0) {
+			$('body').addClass('modal-open');
+		} else {
+			$('body').removeClass('modal-open');
+			$('body').removeAttr('style');
+		}
+	});
 }
