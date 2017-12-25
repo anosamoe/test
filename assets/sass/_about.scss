@@ -1,0 +1,109 @@
+.button {
+    &.small-btn {
+        &:after,
+        &:before {}
+        &:active {
+            top: 2px;
+            &:after {
+                top: -.2em;
+            }
+        }
+    }
+}
+section {
+    &.about_page {
+        padding-bottom: 1em;
+        padding-top: 6em;
+        .center_content {
+            background-repeat: no-repeat;
+            .about_banner {
+                display: flex;
+                -ms-flex-line-pack: center;
+                align-content: center;
+                justify-content: center;
+                @include beveled-corners($color-blue, .2em, .2em, 0em, 0em);
+                padding: 2.6em 2.1em;
+                img {
+                    width: 100%;
+                }
+            }
+            .about_description {
+                @include beveled-corners(#fff, 0, 0, .2em, .2em);
+                .text {
+                    width: 64%;
+                    padding: 2.5em 4em 3em;
+                    padding-right: 1.5em;
+                    float: left;
+                    p {
+                        margin-bottom: 1em;
+                        font-size: 1.6rem;
+                        b, strong {
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .buttons {
+                    float: right;
+                    width: 34%;
+                    padding: 2.5em 0em;
+                    a {
+                        margin-bottom: .5em;
+                        font-size: 4rem;
+                        line-height: 1.15;
+                        padding: 0 .7em;
+                        min-width: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    section {
+        &.about_page {
+            .center_content {
+                .about_description {
+                    display: block;
+                    .text,
+                    .buttons {
+                        width: 100%;
+                        padding: 1.5em 1.3em;
+                    }
+                    .buttons {
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        a {
+                            max-width: 200px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:640px) {
+    section {
+        &.about_page {
+            .center_content {
+                padding: 0 1.2em;
+            }
+        }
+    }
+}
+@media (max-width:520px) {
+    .title_section {
+        font-size: 4.5rem;
+    }
+    section {
+        &.about_page {
+            .center_content {
+                .text,
+                .buttons {
+                    padding: 1.5em 1em;
+                }
+            }
+        }
+    }
+}

@@ -129,3 +129,4 @@
 <?php include './account/sign_up.php'; ?>
 <?php include './account/login.php'; ?>
 <?php include './account/pass-recovery.php'; ?>
+<?php include './cashier/cashier.php'; ?>

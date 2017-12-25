@@ -16,7 +16,7 @@
                 <a href="#">My Account</a>
             </div>
             <div class="ai-r">
-                <a href="#" class="button small-btn green"><span>deposit</span></a>
+                <a href="#" class="button small-btn green" data-toggle="modal" data-target="#cashier-modal"><span>deposit</span></a>
             </div>
         </div>
         <div class="phone-chat">

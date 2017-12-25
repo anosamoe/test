@@ -1,6 +1,4 @@
-$font-stack: 'blogger_sans',
-Arial,
-sans-serif;
+$font-stack: 'blogger_sans', Arial, sans-serif;
 $font-sec: 'bombardier';
 $font-banner-title: 'atlantic_bentley';
 $color-blue: #03eaff;
@@ -170,6 +168,24 @@ img {
             z-index: 1;
         }
     }
+}
+.title_section {
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    font-family: $font-sec;
+    padding: .5em 0;
+}
+.standart_block {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    max-width: 1380px;
+    background: transparent;
+    margin: auto;
+    padding: 0 2em;
 }
 .slick-slider {
     .slick-arrow {
@@ -384,3 +400,6 @@ label:hover:before {}
 @import 'casino.scss';
 @import 'modals.scss';
 @import '404.scss';
+@import 'cashier.scss';
+@import 'promotions.scss';
+@import 'about.scss';
