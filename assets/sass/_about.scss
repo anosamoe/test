@@ -1,15 +1,15 @@
-.button {
-    &.small-btn {
-        &:after,
-        &:before {}
-        &:active {
-            top: 2px;
-            &:after {
-                top: -.2em;
-            }
-        }
-    }
-}
+//.button {
+//    &.small-btn {
+//        &:after,
+//        &:before {}
+//        &:active {
+//            top: 2px;
+//            &:after {
+//                top: -.2em;
+//            }
+//        }
+//    }
+//}
 section {
     &.about_page {
         padding-bottom: 1em;
