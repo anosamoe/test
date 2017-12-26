@@ -25,64 +25,103 @@
                 </div>
             </div>
             <div class="games_cont">
-                <div class="games_cont_item">
-                    <p class="title">Additional Bonuses</p>
-                    <div class="add_bonuses">
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/king.jpg)">
-                                <span>Friday Kings Of Spades</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/pincher.jpg)">
-                                <span>Steam Your Streak</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/baseball_field.jpg)">
-                                <span>Snap Your Skid</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/magic_numbers.jpg)">
-                                <span>10 is the Magic Number</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/boxing.jpg)">
-                                <span>MMA & Boxing Bad Beat</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/spread_word.jpg)">
-                                <span>Spread the Word</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/superman.jpg)">
-                                <span>Superman</span>
-                            </a>
-                        </div>
-                        <div class="add_bonuses_item">
-                            <a href="#" class="item_link_text">
-                                <img class="item_img" src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/fresh_start.jpg)">
-                                <span>Fresh Start</span>
-                            </a>
-                        </div>
+                <div class="games_list">
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/sportsmen.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">50% Sign-Up<br>
+                                Bonus Up To<br>
+                                $1000</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
                     </div>
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/baseball.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">20% Risk-Free<br>
+                                Sport Bet</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/monkey.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">100% Casino<br>
+                                Sign-Up Bonus</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/horses.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">25% Reload<br>
+                                Bonus Up To<br>
+                                $500</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/basketball.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">8% Cash Back <br>
+                                Rebate</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="games_list_item">
+                        <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
+                            <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/fans.jpg)">
+                            <div class="game_overlay">
+                                <p class="promotions_parag">Refer a Friend<br>
+                                Special 200% Up <br>
+                                To $200</p>
+                                <span class="more-info">more info</span>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <?php include('./head_foot_menu/footer.php'); ?>
     </div>
+
+
+<div class="modal fade" id="promotion-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <p class="modal_title">
+                <img class="modal_logo" src="../assets/images/wb_logo-mob.png" alt="">
+                <span>50% sign-up bonus up tp $1000</span>
+            </p>
+            <div class="promotion-cont">
+                <span class="close" data-dismiss="modal">&#10006;</span>
+                <div class="wrap">
+                    <div class="col2 banner">
+                        <img src="../assets/images/monkey-banner.jpg" alt="">
+                    </div>
+                    <div class="col2 blue">
+                        <p>This promotion is only available to new cash accounts. Unless specifically invited, existing account holders and guest players will not qualify. This is a limited time offer. The maximum bonus per deposit is $300.00. <a href="#" class="link_term">Click here</a> for Terms & Conditions.</p>
+                        <a href="#" class="button green medium-btn">deposit</a>  
+                    </div>
+                </div>                    
+                        
+                 
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

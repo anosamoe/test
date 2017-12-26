@@ -68,7 +68,7 @@
             }
         }
     }
-    .sign-up-cont {
+    .sign-up-cont{
         width: 1220px;
         .sing-in_section_cont {
             .top,
@@ -91,6 +91,39 @@
             .bottom {
                 padding-top: 2em;
             }
+        }
+    }
+    .promotion-cont {
+        width: 1220px;
+        margin: -4em;
+        @include clip-path(10px, calc(100% - 10px));
+        .close{
+            color: #fff;
+        }
+        .wrap{
+            display: flex;
+            .col2{
+                width: 50%;
+                &.banner{
+
+                }
+                &.blue{
+                    background: #2b466f;
+                    color: #fff;
+                    font-family: $font-stack;
+                    text-align: left;
+                    padding: 4em;
+                    p{
+                        font-size: 2em; 
+                        padding-bottom: 1.5em;                      
+                    }
+                    .link_term{
+                        color: $color-blue;
+                        font-family: $font-stack;
+                    }
+                }
+            }
+
         }
     }
     .login-cont, .pass-recovery-cont {

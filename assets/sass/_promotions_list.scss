@@ -1,0 +1,75 @@
+.promotions-page{
+	.games_filter{
+		.games_cont{
+			.games_list {
+
+
+			    &:after{
+			        content: '';
+				    clear: both;
+				    display: block;
+			    }
+			    
+			    .games_list_item {
+					width: 33.33%;
+				    margin-bottom: .5em;
+					float: left;
+				                        
+                    .game_item{
+	                    position: relative;
+                        background: #000;
+                        height: 100%;
+                        display: block;
+                        @include clip-path(10px, calc(100% - 10px));
+                		
+
+                		.game_overlay {
+						    position: absolute;
+						    top: 0px;
+						    display: flex;
+						    flex-direction: column;
+						    height: 100%;
+						    width: 100%;
+						    justify-content: space-between;
+
+						    p.promotions_parag {
+							    color: $color-blue;
+							    padding-left: .9em;
+							    font-size: 2.8em;
+							    line-height: 1.3em;
+							    margin-top: .5em;
+							}
+
+							.more-info{
+							    padding-left: 2.4em;
+							    font-weight: 600;
+							    font-size: 1.2em;
+							    font-family: $font-stack;
+							    text-transform: uppercase;
+							    margin-bottom: 1.7em;
+							    color: $color-blue;
+							    display: none;
+							}
+						}
+						&:hover {
+                            transform: scale(1.02);
+
+                            .game_overlay {
+                                background: rgba(0, 0, 0, .5);
+
+                                .promotions_parag {
+                                    color: #fff;
+                                }
+                                
+                                .more-info {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+				}
+			}
+		}
+	}
+		
+}

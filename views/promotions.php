@@ -29,7 +29,7 @@
                     <p class="title">welcome bonuses <span>[14]</span></p>
                     <div class="gc_carousel">
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/sportsmen.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">50% Sign-Up<br>
@@ -40,7 +40,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/baseball.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">20% Risk-Free<br>
@@ -50,7 +50,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/monkey.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">100% Casino<br>
@@ -60,7 +60,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/sportsmen.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">50% Sign-Up<br>
@@ -71,7 +71,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/baseball.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">20% Risk-Free<br>
@@ -81,14 +81,14 @@
                             </a>
                         </div>
                         <div>
-                            <div class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/monkey.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">100% Casino<br>
                                     Sign-Up Bonus</p>
                                     <span class="more-info">more info</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                     <p class="title">Customers bonuses <span>[7]</span></p>
                     <div class="gc_carousel">
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/horses.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">25% Reload<br>
@@ -107,17 +107,17 @@
                             </a>
                         </div>
                         <div>
-                            <div class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/basketball.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">8% Cash Back <br>
                                     Rebate</p>
                                     <span class="more-info">more info</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/fans.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">Refer a Friend<br>
@@ -128,7 +128,7 @@
                             </a>
                         </div>
                         <div>
-                            <div class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/horses.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">25% Reload<br>
@@ -136,10 +136,10 @@
                                     $500</p>
                                     <span class="more-info">more info</span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/basketball.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">8% Cash Back <br>
@@ -149,7 +149,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="#" class="game_item">
+                            <a href="#" class="game_item" data-toggle="modal" data-target="#promotion-modal">
                                 <img src="../assets/images/empty_prom_l.png" alt="" style="background-image: url(../assets/images/promotions/fans.jpg)">
                                 <div class="game_overlay">
                                     <p class="promotions_parag">Refer a Friend<br>
