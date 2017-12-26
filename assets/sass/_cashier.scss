@@ -46,10 +46,193 @@
                 -webkit-box-align: baseline;
                 -ms-flex-align: baseline;
                 align-items: baseline;
+                height: 0px;
+                visibility: hidden;
+                overflow: hidden;
+                transition: .2s;
+                &.active {
+                    height: auto;
+                    visibility: visible;
+                }
                 .col3-item {
                     width: 33.3%;
-                    padding: 0 2em;
+                    padding: 0 3em;
                     text-align: left;
+                }
+            }
+            #deposit,
+            #withdraw {
+                .select_btns_cont {
+                    .s_btn {
+                        &:nth-child(odd) {
+                            margin-right: 4%;
+                        }
+                    }
+                }
+                .expiration_c {
+                    max-width: 355px;
+                    &:after {
+                        content: '';
+                        clear: both;
+                        display: block;
+                    }
+                    .expiration_l {
+                        width: 52%;
+                        float: left;
+                        .date-select {
+                            .form-group {
+                                width: 47%;
+                            }
+                        }
+                    }
+                    .expiration_r {
+                        float: right;
+                        width: 48%;
+                        text-align: right;
+                        .cvv {
+                            max-width: 88px;
+                            text-align: left;
+                            display: inline-block;
+                        }
+                    }
+                }
+                .amount_select {
+                    margin-top: 20px;
+                    max-width: 355px;
+                    .select_btns_cont {
+                        margin-top: 15px;
+                        .s_btn {
+                            width: 18%;
+                            margin-right: 2.5%;
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            a {
+                                font-size: 14px;
+                                color: #030811;
+                                padding: 10px 0;
+                                line-height: 1;
+                            }
+                        }
+                    }
+                }
+                .checkbox {
+                    label {
+                        span {
+                            font-size: 2em;
+                            height: 1.4em;
+                            a {
+                                display: block;
+                                font-size: .6em;
+                                margin-top: .3em;
+                            }
+                        }
+                    }
+                }
+                .info_list {
+                    font-size: 2em;
+                    padding-left: 1em;
+                    margin: 2em 0 3em;
+                    li {
+                        font-size: .5em;
+                        line-height: 1.1;
+                        span {
+                            font-size: 2em;
+                            vertical-align: middle;
+                            padding-bottom: .3em;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            #withdraw {
+                .col_title.mt {
+                    margin-top: 1.2em;
+                }
+                a.button {
+                    margin-top: .5em;
+                }
+                .recipient_info {
+                    max-width: 355px;
+                    padding: 1.5em 1.3em;
+                    background-color: #e9ecf0;
+                    background-image: url(../images/user_img.png);
+                    background-repeat: no-repeat;
+                    background-position: right 1.3em bottom;
+                    .recipient_info_item {
+                        margin-bottom: 1.5em;
+                        font-weight: 600;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        span {
+                            font-size: 1.4em;
+                        }
+                        p {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .select_btns_cont {
+        &:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .s_btn {
+            width: 48%;
+            float: left;
+            margin-bottom: 15px;
+            span {
+                display: block;
+                font-size: 1.4em;
+                margin-left: 1.3em;
+                margin-bottom: .2em;
+                color: #030811;
+                font-weight: 600;
+            }
+            a {
+                display: block;
+                text-align: center;
+                padding: 4px 0;
+                position: relative;
+                margin-bottom: 10px;
+                @include beveled-corners(#fff, 3.5px, 3.5px);
+                &::after {
+                    content: '';
+                    @include beveled-corners(#e8e8e8, 4px, 4px);
+                    position: absolute;
+                    width: calc(100% + 4px);
+                    height: calc(100% + 4px);
+                    top: 7px;
+                    left: -2px;
+                    z-index: -2;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: calc(100% + 4px);
+                    height: calc(100% + 4px);
+                    left: -2px;
+                    top: -2px;
+                    @include beveled-corners(#c6c6c6, 4px, 4px);
+                    z-index: -1;
+                }
+                img {
+                    max-width: 100%;
+                }
+                &:active,
+                &.active {
+                    top: 7px;
+                    &::after {
+                        top: -2px;
+                    }
+                    &::before {
+                        @include beveled-corners($color-dark-blue, 4px, 4px);
+                    }
                 }
             }
         }

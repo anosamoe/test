@@ -1,4 +1,6 @@
-$font-stack: 'blogger_sans', Arial, sans-serif;
+$font-stack: 'blogger_sans',
+Arial,
+sans-serif;
 $font-sec: 'bombardier';
 $font-banner-title: 'atlantic_bentley';
 $color-blue: #03eaff;
@@ -140,6 +142,20 @@ img {
             left: 0;
             top: 0;
             @include beveled-corners($color-green, .14em, .14em);
+            z-index: -1;
+        }
+    }
+    &.yellow {
+        color: #142e54;
+        @include beveled-corners(#ffea4c, .14em, .14em);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            @include beveled-corners(#ffea4c, .14em, .14em);
             z-index: -1;
         }
     }
@@ -301,7 +317,9 @@ input:focus:-moz-placeholder {
 }
 
 /* checkbox */
-.checkbox, .checkbox+.checkbox {
+
+.checkbox,
+.checkbox+.checkbox {
     font-size: 10px;
     margin: 0em 0 1em;
     span {
@@ -311,6 +329,10 @@ input:focus:-moz-placeholder {
         vertical-align: middle;
         line-height: 1;
         height: 2.3em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
     a {
         &:hover {
@@ -329,7 +351,9 @@ input:focus:-moz-placeholder {
     padding-left: 4em;
     cursor: pointer;
 }
+
 /* checkbox aspect */
+
 [type="checkbox"]:not(:checked) + label:before,
 [type="checkbox"]:checked + label:before {
     content: '';
@@ -342,7 +366,9 @@ input:focus:-moz-placeholder {
     @include beveled-corners(#c2c2c2, .3em, .3em);
     background-size: 55% 55%;
 }
+
 /* checked mark aspect */
+
 [type="checkbox"]:not(:checked) + label:after,
 [type="checkbox"]:checked + label:after {
     content: "\f00c";
@@ -360,14 +386,18 @@ input:focus:-moz-placeholder {
     @include beveled-corners(#fff, .15em, .15em);
     background-size: 55% 55%;
 }
+
 /* checked mark aspect changes */
+
 [type="checkbox"]:not(:checked) + label:after {
     color: transparent;
 }
 [type="checkbox"]:checked + label:after {
     color: #5fba2a;
 }
+
 /* disabled checkbox */
+
 [type="checkbox"]:disabled:not(:checked) + label:before,
 [type="checkbox"]:disabled:checked + label:before {
     box-shadow: none;
@@ -378,11 +408,16 @@ input:focus:-moz-placeholder {
 [type="checkbox"]:disabled + label {
     color: #aaa;
 }
+
 /* accessibility */
+
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {}
+
 /* hover style just for information */
+
 label:hover:before {}
+
 /* end checkbox */
 
 @media (min-width: 641px) {

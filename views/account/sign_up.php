@@ -34,7 +34,7 @@
                                     <label for="">Mobile Phone</label>
                                     <div class='clear phone_cont form-group'>
                                         <div class='input-cont-group left_c'>
-                                            <input type="number" name='mob_code' placeholder="USA +1" disabled>
+                                            <input type="text" name='mob_code' placeholder="USA +1" disabled>
                                         </div>
                                         <div class='input-cont-group right_c'>
                                             <input type="number" id="mobile-number-popup" name='mob_number' placeholder="234 567-89-01">
