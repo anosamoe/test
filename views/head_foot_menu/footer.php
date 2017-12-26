@@ -126,7 +126,7 @@
         <a class="maxcreate hide-on-mobile" href="#"><img src="../assets/images/maxcreate-logo.png" title="Front-end by MAXCREATE" alt="Front-end by MAXCREATE"></a>
     </div>
 </footer>
-<?php include './account/sign_up.php'; ?>
-<?php include './account/login.php'; ?>
-<?php include './account/pass-recovery.php'; ?>
-<?php include './cashier/cashier.php'; ?>
+<?php include './modals/sign_up.php'; ?>
+<?php include './modals/login.php'; ?>
+<?php include './modals/pass-recovery.php'; ?>
+<?php include './modals/cashier.php'; ?>

@@ -45,7 +45,7 @@
                                     <label for="">Date of Birth</label>
                                     <div class='input-cont-group date-select'>
                                        <div class='form-group select-arrow'>
-                                            <?php 
+                                            <?php
                                                 $months = array(1 => 'January', 2 => 'February.', 3 => 'March', 4 => 'April', 5 => 'May', 6 => 'June', 7 => 'July', 8 => 'August', 9 => 'September', 10 => 'October', 11 => 'November', 12 => 'December');
                                                 $transposed = array_slice($months, date('n'), 12, true) + array_slice($months, 0, date('n'), true);
                                                 $last8 = array_reverse(array_slice($transposed, -8, 12, true), true);
@@ -62,7 +62,7 @@
                                         <div class='form-group select-arrow'>
                                             <select name='dob'>
                                                 <option selected="true" disabled="disabled">Day</option>
-                                                <?php 
+                                                <?php
                                                 for($i=1; $i<32; $i++){
                                                     echo "<option value='".$i."'>".$i."</option>";
                                                 }
@@ -72,7 +72,7 @@
                                         <div class='form-group select-arrow'>
                                             <select name='dob'>
                                                 <option selected="true" disabled="disabled">Year</option>
-                                                <?php 
+                                                <?php
                                                 for($i=1900; $i<2017; $i++){
                                                     echo "<option value='".$i."'>".$i."</option>";
                                                 }
