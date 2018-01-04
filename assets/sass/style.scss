@@ -73,6 +73,8 @@ img {
     text-transform: uppercase;
     display: inline-block;
     position: relative;
+    box-shadow: none;
+    border: none;
     > span {
         z-index: 1;
     }
@@ -159,6 +161,20 @@ img {
             z-index: -1;
         }
     }
+    &.gray {
+        color: #142e54;
+        @include beveled-corners(#e9ecf0, .14em, .14em);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            @include beveled-corners(#e9ecf0, .14em, .14em);
+            z-index: -1;
+        }
+    }
     &::after {
         content: '';
         @include beveled-corners($color-dark-blue, .14em, .14em);
@@ -184,6 +200,12 @@ img {
             z-index: 1;
         }
     }
+    &:active {
+        top: .15em;
+        &:after {
+            top: 0;
+        }
+    }
 }
 .title_section {
     text-transform: uppercase;
@@ -202,7 +224,8 @@ img {
     max-width: 1380px;
     background: transparent;
     margin: auto;
-    padding: 0 2em;
+    padding: 0 4em;
+    font-size: 10px;
 }
 .slick-slider {
     .slick-arrow {
@@ -420,6 +443,40 @@ label:hover:before {}
 
 /* end checkbox */
 
+/* table */
+.table {
+	font-size: 10px;
+    margin-bottom: 2em;
+}
+.table>tbody>tr>td {
+	padding: .9em .7em;
+	border-top: none;
+    font-size: 2em;
+}
+.table>tbody>tr>td > span {
+	font-weight: 500;
+}
+.table>tbody>tr>td > span.counter {
+	font-weight: 300;
+}
+.table>tbody>tr>td > span.cancel {
+	color: #ff001d;
+    cursor: pointer;
+}
+.table>tbody>tr>td > span.gray {color: rgba(3, 7, 16, 0.5);}
+.table>tbody>tr>td > span.green {color: #2a9509;}
+.table>tbody>tr>td > span.red {color: #ff0000;}
+.table>tbody>tr>td > span.brown {color: #b69e00;}
+.table>thead>tr>th {
+	border-bottom: 1px solid #95a2b7;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: .3em 1em .1em;
+}
+.table>tbody>tr:nth-of-type(even) {
+	background-color: #e9ecf0;
+}
+
 @media (min-width: 641px) {
     .hide-on-desktop {
         display: none !important;
@@ -439,3 +496,6 @@ label:hover:before {}
 @import 'cashier.scss';
 @import 'promotions.scss';
 @import 'about.scss';
+@import 'promotions_list.scss';
+@import 'account.scss';
+@import 'drag-n-drop-content.scss';

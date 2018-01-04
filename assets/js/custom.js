@@ -6,6 +6,7 @@ jQuery(document).ready(function () {
     homeBannerLoggedIn();
     gamesCaruosel();
     multyModals();
+    inputCheckValue();
 });
 
 ;function homeBanner() {
@@ -85,4 +86,27 @@ jQuery(document).ready(function () {
 			$('body').removeAttr('style');
 		}
 	});
+}
+
+;function inputCheckValue() {
+	$('.input-cont input, .input-cont textarea').on('change', function(){
+		checker();
+	});
+	checker();
+	function checker() {
+		$('.input-cont input').each(function(){
+			if($(this).val() !== '') {
+				$(this).addClass('filled');
+			} else {
+				$(this).removeClass('filled');
+			}
+		});
+		$('.input-cont textarea').each(function(){
+			if($(this).val() !== '') {
+				$(this).addClass('filled');
+			} else {
+				$(this).removeClass('filled');
+			}
+		});
+	}
 }

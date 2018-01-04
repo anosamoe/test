@@ -93,11 +93,48 @@
             }
         }
     }
-    .login-cont, .pass-recovery-cont {
+    .promotion-cont {
+        width: 1300px;
+        margin: -4em -5em;
+        @include clip-path(10px, calc(100% - 10px));
+        .close {
+            color: #fff;
+        }
+        .wrap {
+            display: flex;
+            .col2 {
+                img {
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                width: 50%;
+                &.banner {}
+                &.blue {
+                    background: #2b466f;
+                    color: #fff;
+                    font-family: $font-stack;
+                    text-align: left;
+                    padding: 4em;
+                    p {
+                        font-size: 2em;
+                        padding-bottom: 1.5em;
+                    }
+                    .link_term {
+                        color: $color-blue;
+                        font-family: $font-stack;
+                    }
+                }
+            }
+        }
+    }
+    .login-cont,
+    .pass-recovery-cont {
         width: 395px;
         text-align: left;
         padding-top: 1.5em;
-        .login_section_cont, .pass-recovery_section_cont {
+        .login_section_cont,
+        .pass-recovery_section_cont {
             max-width: 355px;
             margin: auto;
             .save_info {
@@ -205,6 +242,9 @@
             &:focus {
                 @include beveled-corners(#fff, 3.5px, 3.5px);
                 box-shadow: 0 0 15px 0px rgba(3, 234, 255, .7);
+            }
+            &.filled {
+                @include beveled-corners(#fff, 3.5px, 3.5px);
             }
         }
         &.phone_cont {

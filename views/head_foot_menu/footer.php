@@ -130,3 +130,5 @@
 <?php include './modals/login.php'; ?>
 <?php include './modals/pass-recovery.php'; ?>
 <?php include './modals/cashier.php'; ?>
+<?php include './modals/promo_modal.php'; ?>
+<script type="text/javascript" src="../assets/js/vendors/drag-n-drop-content.js"></script>

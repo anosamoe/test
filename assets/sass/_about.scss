@@ -22,7 +22,7 @@ section {
                 align-content: center;
                 justify-content: center;
                 @include beveled-corners($color-blue, .2em, .2em, 0em, 0em);
-                padding: 2.6em 2.1em;
+                padding: 4em 3em;
                 img {
                     width: 100%;
                 }
@@ -31,7 +31,7 @@ section {
                 @include beveled-corners(#fff, 0, 0, .2em, .2em);
                 .text {
                     width: 64%;
-                    padding: 2.5em 4em 3em;
+                    padding: 4em 6.5em 3em;
                     padding-right: 1.5em;
                     float: left;
                     p {
@@ -45,7 +45,7 @@ section {
                 .buttons {
                     float: right;
                     width: 34%;
-                    padding: 2.5em 0em;
+                    padding: 4em 0em;
                     a {
                         margin-bottom: .5em;
                         font-size: 4rem;

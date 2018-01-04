@@ -196,20 +196,20 @@
                                 <div class="col_title">Withdrawal Amount, $</div>
                                 <div class='input-cont'>
                                     <div class='input-cont-group form-group'>
-                                        <input type="text" id="selected_amount" name="selected_amount" placeholder="Amount">
+                                        <input type="text" id="withdrawal_selected_amount" name="withdrawal_selected_amount" placeholder="Amount">
                                     </div>
                                 </div>
                                 <div class="col_title mt">Credit Card Details</div>
                                 <div class='input-cont'>
-                                    <label for="card_number">Card Number</label>
+                                    <label for="withdrawal_card_number">Card Number</label>
                                     <div class='input-cont-group form-group'>
-                                        <input type="text" id="card_number" name="card_number" placeholder="Card Number">
+                                        <input type="text" id="withdrawal_card_number" name="withdrawal_card_number" placeholder="Card Number">
                                     </div>
                                 </div>
                                 <div class='input-cont'>
-                                    <label for="card_holder">Card Holder Name</label>
+                                    <label for="withdrawal_card_holder">Card Holder Name</label>
                                     <div class='input-cont-group form-group'>
-                                        <input type="text" id="card_holder" name="card_holder" placeholder="Card Holder Name">
+                                        <input type="text" id="withdrawal_card_holder" name="card_holder" placeholder="Card Holder Name">
                                     </div>
                                 </div>
                                 <div class='input-cont expiration_c'>
@@ -217,7 +217,7 @@
                                         <label for="">Expiration Date</label>
                                         <div class='input-cont-group date-select'>
                                             <div class='form-group select-arrow'>
-                                                <select name='expiration'>
+                                                <select name='withdrawal_expiration'>
                                                     <option selected="true" disabled="disabled">MM</option>
                                                     <?php
                                                     for($i=1; $i<13; $i++){
@@ -227,7 +227,7 @@
                                                 </select>
                                             </div>
                                             <div class='form-group select-arrow'>
-                                                <select name='expiration'>
+                                                <select name='withdrawal_expiration'>
                                                     <option selected="true" disabled="disabled">YYYY</option>
                                                     <?php
                                                     for($i=1900; $i<2018; $i++){
@@ -240,9 +240,9 @@
                                     </div>
                                     <div class="expiration_r">
                                         <div class="cvv">
-                                            <label for="cvv">CVV</label>
+                                            <label for="withdrawal_cvv">CVV</label>
                                             <div class='input-cont-group form-group'>
-                                                <input type="number" id="cvv" name="cvv" placeholder="CVV">
+                                                <input type="number" id="withdrawal_cvv" name="cvv" placeholder="CVV">
                                             </div>
                                         </div>
                                     </div>

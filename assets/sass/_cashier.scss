@@ -25,12 +25,14 @@
                     line-height: 1;
                     &:hover {
                         background: inherit;
+                        border: none;
                     }
                 }
                 &.active {
                     background: #fff;
                     a {
                         color: #030810;
+                        border: none;
                     }
                 }
             }

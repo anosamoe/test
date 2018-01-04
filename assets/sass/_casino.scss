@@ -22,6 +22,10 @@
                             top: 40%;
                             right: 8%;
                             font-size: 5.5em;
+                            transition: 0s;
+                            &:active {
+                                margin-top: .15em;
+                            }
                         }
                     }
                 }

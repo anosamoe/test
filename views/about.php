@@ -11,17 +11,15 @@
 
 <body>
     <?php include('./head_foot_menu/header-logged-out.php'); ?>
-
-
         <section class="about_page home-logged-in">
             <div class="standart_block">
                 <h2 class="title_section">about us</h2>
                 <div class="center_content">
 
                     <div class="about_banner">
-                        <a href="#" class="logo">
+                        <p class="logo">
                             <img src="../assets/images/wb_logo_dark.png" alt="">
-                        </a>
+                        </p>
                     </div>
                     <div class="about_description clear">
                         <div class="text">
