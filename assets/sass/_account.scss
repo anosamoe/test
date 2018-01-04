@@ -1,0 +1,172 @@
+.center_content {
+    color: #030810;
+    background-image: none;
+    padding: 0 4em 1em;
+    position: relative;
+    @include beveled-corners(#fff, .5em, .5em);
+}
+.account_page {
+    padding-top: 6em;
+    .account_title_cont {
+        padding: 0em 3em;
+        margin-bottom: 4em;
+        border: none;
+        li {
+            width: 20%;
+            float: left;
+            text-align: center;
+            font-family: $font-sec;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            background: #2b466f;
+            margin: 0;
+            a {
+                display: block;
+                color: $color-blue;
+                padding: .5em;
+                margin: 0;
+                border-radius: 0;
+                border: none;
+                line-height: 1;
+                &:hover {
+                    background: inherit;
+                    border: none;
+                }
+            }
+            &.active {
+                background: #fff;
+                a {
+                    color: #030810;
+                    border: none;
+                }
+            }
+        }
+    }
+    .tab-pane {
+        visibility: hidden;
+        overflow: hidden;
+        transition: .2s;
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        &.active {
+            height: auto;
+            visibility: visible;
+        }
+        .col3-item {
+            width: 33.3%;
+            padding: 0 3em;
+            text-align: left;
+            float: left;
+        }
+        .col6-item {
+            width: 50%;
+            padding: 0 3em;
+            text-align: left;
+            float: left;
+        }
+        .col9-item {
+            width: 66.6%;
+            padding: 0 3em;
+            text-align: left;
+            float: left;
+        }
+        .col12-item {
+            width: 100%;
+            padding: 0 3em;
+        }
+        .col_title {
+            font-size: 2.4em;
+            font-weight: 600;
+            margin-bottom: .5em;
+            padding-left: 18px;
+        }
+        .pr_list {
+            max-width: 355px;
+            padding: 1.5em 1.3em 1.7em;
+            background-color: #e9ecf0;
+            background-repeat: no-repeat;
+            background-position: right 1.3em bottom;
+            &.profile_info {
+                background-image: url(../images/user_img.png);
+                background-position: right 1.3em top 2em;
+                background-size: 170px;
+            }
+            &.balance_info {
+                background-image: url(../images/balance_img.png);
+                background-position: right 3em top 2em;
+            }
+            .recipient_info_item {
+                margin-bottom: 1.5em;
+                font-weight: 600;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                span {
+                    font-size: 1.4em;
+                }
+                p {
+                    font-size: 2em;
+                }
+            }
+        }
+        .pane_bottom {
+            margin-top: 2em;
+        }
+    }
+    .btn_cont {
+        margin-top: 2em;
+        .button.small-btn {
+            margin-bottom: .7em;
+            margin-right: .5em;
+        }
+    }
+    .button.small-btn {
+        min-width: inherit;
+        padding: 0 .7em;
+    }
+    .transaction_types {
+        text-align: center;
+        position: relative;
+        &.select-arrow {
+            max-width: 35.6em;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 3em;
+            select {
+                height: 1.85em;
+                width: 100%;
+                padding: 0 1.5em 0 .6em;
+                font-size: 20px;
+                background: none;
+                border: none;
+                outline: none;
+                color: #030811;
+                background-image: url(../images/select_bg.png);
+                background-position: center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                -webkit-appearance: none;
+                appearance: none;
+                option {
+                    color: #030810;
+                }
+            }
+            &:after {
+                content: ">";
+                position: absolute;
+                display: block;
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                font-family: "bombardier";
+                font-size: 27px;
+                color: #25292d;
+                line-height: .7;
+                right: 15px;
+                top: 11px;
+            }
+        }
+    }
+}

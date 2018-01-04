@@ -1,0 +1,129 @@
+.box {
+    margin-bottom: 2.5em;
+}
+.box.has-advanced-upload .box__input {
+    border: 1px dashed #c2c2c2;
+    transition: .2s;
+    padding: .2em .9em;
+    border-radius: 5px;
+    font-weight: 300;
+    position: relative;
+    font-size: 2em;
+}
+.box.is-dragover .box__input {
+    border: 1px solid #c2c2c2;
+}
+.box__file {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.box.is-success .box__file {
+    cursor: default;
+}
+.box__input label {
+    margin: 0;
+    font-weight: 300;
+}
+.box__dragndrop,
+.box__icon {
+    display: none;
+}
+.box.has-advanced-upload .box__dragndrop {
+    display: inline;
+}
+.box__uploading,
+.box__success,
+.box__error {
+    display: none;
+}
+.box.is-uploading .box__uploading,
+.box.is-success .box__success,
+.box.is-error .box__error {
+    display: block;
+    position: relative;
+    font-weight: 500;
+}
+.box__success {
+    color: #5fba2a;
+    i {
+        font-size: 1em;
+        margin-top: .1em;
+    }
+}
+.box .button.regular {
+    margin: .5em 0 0 0;
+    display: none;
+}
+.enable-button.box .button.regular {
+    display: block;
+}
+.box.is-uploading .box__input label,
+.box.is-success .box__input label,
+.box.is-error .box__input label {
+    display: none;
+}
+.box.is-uploading .box__input,
+.box.is-success .box__input,
+.box.is-error .box__input {
+    border: 1px solid #c2c2c2;
+}
+.box__restart {
+    font-weight: 700;
+}
+.box__restart:focus,
+.box__restart:hover {
+    color: #39bfd3;
+}
+.js .box__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.js .box__file + label {
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+}
+.js .box__file + label:hover strong,
+.box__file:focus + label strong,
+.box__file.has-focus + label strong {
+    color: #39bfd3;
+}
+.js .box__file:focus + label,
+.js .box__file.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.js .box__file + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+.no-js .box__file + label {
+    display: none;
+}
+.no-js .box__button {
+    display: block;
+}
+.box__button {
+    font-weight: 700;
+    color: #e5edf1;
+    background-color: #39bfd3;
+    display: block;
+    padding: 8px 16px;
+    margin: 40px auto 0;
+}
+.box__button:hover,
+.box__button:focus {
+    background-color: #0f3c4b;
+}

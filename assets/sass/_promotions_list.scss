@@ -1,0 +1,106 @@
+.promotions-page {
+    .games_filter {
+        margin-bottom: 10em;
+        .games_cont {
+            .games_list {
+                &:after {
+                    content: '';
+                    clear: both;
+                    display: block;
+                }
+                .games_list_item {
+                    width: 33%;
+                    margin-bottom: .5%;
+                    float: left;
+                    margin-right: .5%;
+                    &:nth-child(3n + 3) {
+                        margin-right: 0;
+                    }
+                    .game_item {
+                        position: relative;
+                        height: 100%;
+                        display: block;
+                        @include clip-path(10px, calc(100% - 10px));
+                        img {
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            padding: .3em;
+                            background-clip: content-box;
+                            position: relative;
+                            @include clip-path(1.5em, calc(100% - 1.5em));
+                            z-index: 2;
+                        }
+                        .game_overlay {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            position: absolute;
+                            width: 98%;
+                            height: 98%;
+                            width: calc(100% - .6em);
+                            height: calc(100% - .6em);
+                            top: .3em;
+                            left: .3em;
+                            z-index: 2;
+                            transition: .2s;
+                            @include clip-path(.9em, calc(100% - .9em));
+                            p.promotions_parag {
+                                color: $color-blue;
+                                padding-left: .9em;
+                                font-size: 2.8em;
+                                line-height: 1.3em;
+                                margin-top: .5em;
+                                font-weight: 600;
+                            }
+                            .more-info {
+                                padding-left: 2.4em;
+                                font-weight: 600;
+                                font-size: 1.2em;
+                                font-family: $font-stack;
+                                text-transform: uppercase;
+                                margin-bottom: 1.7em;
+                                color: $color-blue;
+                                display: none;
+                            }
+                        }
+                        &:after {
+                            content: "";
+                            @include clip-path(1em, calc(100% - 1em));
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background: transparent;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            transition: .2s;
+                        }
+                        &:hover {
+                            transform: scale(1.02);
+                            .game_overlay {
+                                background: rgba(0, 0, 0, .5);
+                                .promotions_parag {
+                                    color: #fff;
+                                }
+                                .more-info {
+                                    display: block;
+                                }
+                            }
+                            &:after {
+                                background: #067a88;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.promo_list {
+        .games_filter {
+            .games_cont {
+                padding-top: 3em;
+            }
+        }
+    }
+}
