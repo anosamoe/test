@@ -36,8 +36,9 @@
                             </p>
                         </div>
                         <div class="buttons">
-                            <a href="#" class="button small-btn blue"><span>Log in</span></a><br>
-                            <a href="#" class="button small-btn red"><span>join now</span></a>
+                            <a href="#" class="button small-btn red sign"><span>sign up</span></a>
+                            <a href="#" class="button small-btn blue log"><span>Log in</span></a><br>
+                            <a href="#" class="button small-btn red join"><span>join now</span></a>
                         </div>
                     </div>
                 </div>

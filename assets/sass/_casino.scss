@@ -56,6 +56,9 @@
         padding: 0 4em;
         margin: 6em auto 0;
         font-size: 10px;
+        .page_title{
+            display: none;
+        }
         .filter_cont {
             .games_filter_menu {
                 display: -webkit-box;
@@ -84,6 +87,9 @@
                     }
                     a {}
                 }
+            }
+            .games_filter_category.select-arrow{
+                display: none;
             }
             .games_filter_search {
                 float: right;
@@ -268,6 +274,112 @@
                     .slick-arrow {
                         top: 30%;
                     }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1120px) {
+    .main-container.home-logged-in{
+        .games_filter{
+            .filter_cont{
+                text-align: center;
+                .games_filter_search{
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+                .games_filter_menu{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 860px) {
+    .main-container.home-logged-in{
+        padding-top: 0;
+        .home-li-slider{
+            display: none;
+        }
+        .games_filter{
+            margin: 2em auto 0;
+            .page_title{
+                display: block;
+                font-size: 7em;
+                //padding: 0 0 .5em;
+                letter-spacing: 0px;
+                text-align: center;
+                font-family: $font-sec;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            .games_filter_menu{
+                display: none;
+            }
+            .games_filter_search {
+                width: 100%;
+                margin-bottom: 2rem;
+                max-width:350px;
+                input{
+                    max-width: 35.6em;
+                    font-size: 2.5rem;
+                }
+                label{
+                    top: .5em;
+                }
+            }
+            .games_filter_category {
+                text-align: center;
+                position: relative;
+                &.select-arrow {
+                    display: block;
+                    width: 100%;
+                    margin: auto;
+                    max-width: 350px;
+                    select {
+                        height: 1.85em;
+                        width: 100%;
+                        max-width:350px;
+                        padding: 0 1.5em 0 .6em;
+                        font-size: 2.5rem;
+                        font-family: $font-sec;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        color: #fff;
+                        background-image: url(../images/input_bg.png);
+                        background-position: center;
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        option {
+                            color: #030810;
+                        }
+                    }
+                    &:after {
+                        color: $color-blue;
+                        content: ">";
+                        position: absolute;
+                        display: block;
+                        -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg);
+                        font-family: "bombardier";
+                        font-size: 27px;
+                        line-height: .7;
+                        right: 10px;
+                        top: .5em;;
+                    }
+                }
+            }
+
+        }
+        .games_cont{
+            .games_cont_item{
+                .title{
+                    text-align: center;
                 }
             }
         }

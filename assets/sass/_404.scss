@@ -37,6 +37,16 @@ section {
     section {
         &.error-page {
             font-size: 12px;
+			padding: 55% 5%;
+			img{
+				max-width: 475px;
+			}
+			p{
+				padding: .5em 0 0.6em;
+			}
+			.back-link{
+				font-size: 2.4em;
+			}
         }
     }
 }

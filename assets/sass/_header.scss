@@ -503,6 +503,15 @@
                     content: url("../images/chat-icon-mob.png");
                     width: 5.2em;
                 }
+                .account-info{
+                    background: none;
+                    .ai-l{
+                        display: none;
+                    }
+                    .ai-r{
+                        text-align: left;
+                    }
+                }
             }
         }
         &.logged-in {

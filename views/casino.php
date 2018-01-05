@@ -24,7 +24,13 @@
             </div>
         </section>
         <section class="games_filter">
+            <p class="page_title">Casino</p>
             <div class="filter_cont clear">
+                <div class="games_filter_search">
+                    <input type="text" placeholder="search game or provider...">
+                    <label for="search_btn"><i class="fa fa-search" aria-hidden="true"></i></label>
+                    <input hidden type="submit" id='search_btn'>
+                </div>
                 <ul class="games_filter_menu">
                     <li class="active"><a href="#">All Games</a></li>
                     <li><a href="#">Slots</a></li>
@@ -33,10 +39,14 @@
                     <li><a href="#">Video Poker</a></li>
                     <li><a href="#">Other Games</a></li>
                 </ul>
-                <div class="games_filter_search">
-                    <input type="text" placeholder="search game or provider...">
-                    <label for="search_btn"><i class="fa fa-search" aria-hidden="true"></i></label>
-                    <input hidden type="submit" id='search_btn'>
+                <div class="games_filter_category select-arrow">
+                    <select>
+                        <option selected disabled>Categories</option>
+                        <option>option 1</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                    </select>
                 </div>
             </div>
             <div class="games_cont">

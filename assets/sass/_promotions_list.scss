@@ -104,3 +104,24 @@
         }
     }
 }
+
+@media (max-width:640px) {
+    .promotions-page {
+        .games_filter{
+            .games_cont{
+                .games_list{
+                    .games_list_item{
+                        width: 100%;
+                        margin-right: 0;
+                        .game_item{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

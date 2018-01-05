@@ -1,34 +1,23 @@
-//.button {
-//    &.small-btn {
-//        &:after,
-//        &:before {}
-//        &:active {
-//            top: 2px;
-//            &:after {
-//                top: -.2em;
-//            }
-//        }
-//    }
-//}
 section {
     &.about_page {
         padding-bottom: 1em;
         padding-top: 6em;
         .center_content {
+            padding: 0;
             background-repeat: no-repeat;
             .about_banner {
                 display: flex;
                 -ms-flex-line-pack: center;
                 align-content: center;
                 justify-content: center;
-                @include beveled-corners($color-blue, .2em, .2em, 0em, 0em);
+                @include beveled-corners($color-blue, .5em, .5em, 0em, 0em);
                 padding: 4em 3em;
                 img {
                     width: 100%;
                 }
             }
             .about_description {
-                @include beveled-corners(#fff, 0, 0, .2em, .2em);
+                @include beveled-corners(#fff, 0, 0, .5em, .5em);
                 .text {
                     width: 64%;
                     padding: 4em 6.5em 3em;
@@ -53,6 +42,9 @@ section {
                         padding: 0 .7em;
                         min-width: inherit;
                     }
+                    .sign{
+                        display: none;
+                    }
                 }
             }
         }
@@ -70,9 +62,6 @@ section {
                         padding: 1.5em 1.3em;
                     }
                     .buttons {
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
                         a {
                             max-width: 200px;
                             width: 100%;
@@ -86,8 +75,46 @@ section {
 @media (max-width:640px) {
     section {
         &.about_page {
-            .center_content {
-                padding: 0 1.2em;
+            padding-top: 3em;
+            .standart_block{
+                padding: 0;
+                .center_content {
+                    padding: 0;
+                    background: none;
+                    .about_banner{
+                        background: none;
+                        background-color: $color-blue;
+                        p.logo{
+                            text-align: center;
+                            img{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .about_description{
+                        background: none;
+                        background-color: #fff;
+                        .text{
+                            padding: 5em 6em;
+                            p{
+                                font-size: 2rem;
+                            }
+                        }
+                        .buttons{
+                            text-align: center;
+                            br{
+                                display: none;
+                            }
+                            .sign{
+                                display: inline-block;
+                                margin-right: .5em;
+                            }
+                            .join{
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
